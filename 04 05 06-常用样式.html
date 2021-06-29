@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>常用样式</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	</head>
+	<body>
+		
+		<!-- 
+			常用样式
+				1. 标题
+					bootstrap对h1到h6的标题效果进行覆盖
+					提供了对应的类名, 为非标题元素设置样式 .h1~.h6
+					副标题 small标签 或者.small类名
+					
+				2. 段落
+					通过.lead来突出强调内容(其作用就是增大文本字号, 加粗文本, 而且对行高和margin也做相应的处理)
+					<small>: 小号字
+					<b><strong>: 加粗
+					<i><em>: 斜体
+					
+				3. 强调
+					.text-muted: 提示, 使用浅灰色(#999)
+					.text-primary: 主要, 使用蓝色(#428bca)
+					.text-success: 成功, 使用浅绿色(#3c763d)
+					.text-warning: 警告, 使用黄色(#8a6d3b)
+					.text-danger: 危险, 使用褐色(#a94442)
+					
+				4.	对齐效果
+					Bootstrap通过电梯四个类名来控制文本的对齐风格
+						.text-left: 左对齐
+						.text-center: 居中对齐
+						.text-right: 右对齐
+						.text-justify: 两端对齐
+		 -->
+		 
+		 <h1>标题1<small>副标题</small></h1>
+		 <h2>标题2<span class="small">副标题2</span></h2>
+		 <h3>标题3</h3>
+		 
+		 <div class="h1">你好</div>
+		 
+		 
+		 <hr ><br><br><br><br><br><br>
+		 <!-- 段落 -->
+		 <p>通过.lead来突出强调内容(其作用就是增大文本字号, 加粗文本, 而且对行高和margin也做相应的处理)</p>
+		 <p class="lead">通过.lead来突出<small>强调</small><b>内容</b>(其<strong>作用</strong>就是增大<i>文本</i>字号, <em>加粗</em>文本, 而且对行高和margin也做相应的处理)</p>
+		 
+		 
+		 <hr ><br><br><br><br><br><br>
+		 <!-- 强调 -->
+		 <div>
+			 <div class="text-muted">.text-muted: 提示, 使用浅灰色(#999)</div>
+			 <div class="text-primary">.text-primary: 主要, 使用蓝色(#428bca)</div>
+			 <div class="text-success">.text-success: 成功, 使用浅绿色(#3c763d)</div>
+			 <div class="text-warning">.text-warning: 警告, 使用黄色(#8a6d3b)</div>
+			 <div class="text-danger">.text-danger: 危险, 使用褐色(#a94442)</div>
+		 </div>
+		 
+		 
+		 
+		 <hr ><br><br><br><br><br><br>
+		 <!-- 对齐效果 -->
+		 <p style="text-align: right;">Bootstrap通过定义四个类名来控制文本的对齐风格</p>
+		 <p class="text-left">左对齐 - Bootstrap通过定义四个类名来控制文本的对齐风格</p>
+		 <p class="text-right">右对齐 - Bootstrap通过定义四个类名来控制文本的对齐风格</p>
+		 <p class="text-center">居中对齐 - Bootstrap通过定义四个类名来控制文本的对齐风格</p>
+		 <!-- 解决段落边边的间隙不一致 -->
+		 <p class="text-justify">
+			 aaaaa 通过.lead来突出强调内容(其作用就是增大文本字号, 加粗文本, 而且对行高和margin也做相应的处理)
+			 bbbbbbb 通过.lead来突出强调内容(其作用就是增大文本字号, 加粗文本, 而且对行高和margin也做相应的处理)
+			 ccccccccc 通过.lead来突出强调内容(其作用就是增大文本字号, 加粗文本, 而且对行高和margin也做相应的处理)
+		 </p>
+		 
+		
+	</body>
+</html>

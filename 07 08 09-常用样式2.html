@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>常用样式</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	</head>
+	<body>
+		
+		<!-- 
+			常用样式
+			
+				5. 列表
+					无序列表(<ul><li>...</li></ul>)
+					有序列表(<ol><li>...</li></ol>)
+					定义列表(<dl><dt>...</dt></dl>)
+					
+				6. 代码
+					(1) 使用<code></code>来显示单行内联代码
+					(2) 使用<pre></pre>来显示多行块代码
+						样式: pre-scrollable (height, max-height高度固定, 为340px, 超过存在滚动条)
+					(3) 使用<kbd></kbd>来显示用户输入代码, 如快捷键	
+					
+					
+				7.表格	
+		 
+		 -->
+		
+		<!-- 无序 列表 -->
+		<ul>
+			<li>无序项目列表一</li>
+			<li>无序项目列表二</li>
+		</ul>
+		<!-- 有序 列表 -->
+		<ol>
+			<li>有序项目列表一</li>
+			<li>有序项目列表二</li>
+		</ol>
+		<!-- 定义列表 -->
+		<dl>
+			<dt>HTML</dt>
+			<dd>超文本标记语言</dd>
+			<dt>CSS</dt>
+			<dd>层叠样式是一种样式表语言</dd>
+		</dl>
+		<!-- 去点列表 -->
+		<ul class="list-unstyled">
+			<li>去点列表一</li>
+			<li>去点列表二</li>
+		</ul>
+		<!-- 内联列表(水平) -->
+		<ul class="list-inline">
+			<li>内联列表一</li>
+			<li>内联列表二</li>
+		</ul>
+		<!-- 自定义列表 内联列表(水平) -->
+		<dl class="dl-horizontal">
+			<dt>HTML</dt>
+			<dd>超文本标记语言</dd>
+			<dt>CSS层叠样式是一种样式表语言层叠样式是一种样式表语言层叠样式是一种样式表语言</dt>
+			<dd>层叠样式是一种样式表语言</dd>
+		</dl>
+		
+		
+		
+		
+		
+		<hr ><br><br>
+		echo "Hello World";<br>
+		<!-- 单行代码 -->
+		<code>echo "Hello World";</code>
+		<!-- 多行代码 -->
+		<!-- 代码会保留原本的格式, 包括空格和回车 -->
+		<pre>
+			echo "Hello World";
+echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+		</pre>
+		<!-- 显示html代码需要使用字符实体 -->
+		<pre>
+			<h2>PHP</h2>
+			&lt;h2&gt;PHP&lt;/h2&gt;
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+		</pre>
+		<!-- 当长度超过指定值, 可以添加滚动条 -->
+		<pre class="pre-scrollable">
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+			echo "Hello World";
+		</pre>
+		<!-- 快捷键 -->
+		<p>使用ctrl+s保存内容</p>
+		<p>使用<kbd>ctrl</kbd>+<kbd>s</kbd>保存内容</p>
+		
+		
+		
+		
+		
+		<hr ><br><br>
+		<!-- 表格 -->
+		<table class="table table-bordered table-striped table-hover table-condensed">
+			<tr class="info">
+				<th>JavaSE</th>
+				<th>数据库</th>
+				<th>JavaScript</th>
+			</tr>
+			<tr class="warning">
+				<td>面向对象</td>
+				<td>orcale</td>
+				<td>json</td>
+			</tr>
+			<tr class="danger">
+				<td>数组</td>
+				<td>mysql</td>
+				<td>ajax</td>
+			</tr>
+			<tr class="active">
+				<td>数组</td>
+				<td>mysql</td>
+				<td>ajax</td>
+			</tr>
+			<tr class="success">
+				<td>数组</td>
+				<td>mysql</td>
+				<td>ajax</td>
+			</tr>
+		</table>
+		
+		
+		
+		
+	</body>
+</html>

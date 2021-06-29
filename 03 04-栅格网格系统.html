@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>栅格网格系统</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<!-- 布局容器 -->
+		<div class="container">
+			<!-- 行元素 -->
+			<div class="row">
+				<!-- 列元素 col-xs-数值 col-sm-数值 col-md-数值 col-lg-数值 -->
+				<div class="col-md-4 col-lg-4" style="background-color: deepskyblue;">4</div>
+				<div class="col-md-8 col-lg-8" style="background-color: bisque;">8</div>
+			</div>
+			
+			<hr >
+			
+			<!-- 
+				栅格网格系统
+					1. 列组合
+						列总和数不能超12, 大于12, 则自动换到下一行
+					2. 列偏移
+						只需要在列元素上添加类名"col-md-offset-*"(其中星号代表要偏移的列组合数), 那个具有这个类名的列就会向右偏移
+						例如, 你在列元素上添加"col-md-offset-8", 表示该列向右移动8个列的宽度(要保证列与偏移列的总数不超过12), 不然会致列断行|换行显示
+					3. 列排序
+						列排序其实就是改变列的方向, 就是改变左右浮动, 并且设置浮动的距离.
+						在BootStrap框架的网格系统中通过添加类名 col-md-pull-* 和 col-md-push-* (其中星号代表移动的列组合数). 往前pull, 往后push.
+					4. 列嵌套
+						Bootstrap框架的网络系统还支持列的嵌套. 你可以在一个列中添加一个或者多个行(row)容器, 然后在这个行容器中插入列.
+						
+			 -->
+			
+			
+			
+			<!-- 列组合 -->
+			<div class="row">
+				<div class="col-md-1" style="background-color: mediumslateblue;">1</div>
+				<div class="col-md-1" style="background-color: #C4E3F3;">1</div>
+				<div class="col-md-1" style="background-color: #204D74;">1</div>
+				<div class="col-md-1" style="background-color: #66512C;">1</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6" style="background-color: mediumslateblue;">6</div>
+				<div class="col-md-6" style="background-color: #C4E3F3;">6</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4" style="background-color: mediumslateblue;">4</div>
+				<div class="col-md-4" style="background-color: #C4E3F3;">4</div>
+				<div class="col-md-4" style="background-color: #E4B9B9;">4</div>
+			</div>
+			<!-- 列的总数不能超过12 -->
+			<div class="row">
+				<div class="col-md-4" style="background-color: mediumslateblue;">4</div>
+				<div class="col-md-4" style="background-color: #C4E3F3;">4</div>
+				<div class="col-md-5" style="background-color: #E4B9B9;">5</div>
+			</div>
+			
+			
+			
+			<hr >
+			<!-- 列偏移 -->
+			<div class="row">
+				<div class="col-md-1" style="background-color: mediumslateblue;">1</div>
+				<div class="col-md-1 col-md-offset-1" style="background-color: #C4E3F3;">1</div>
+				<div class="col-md-1" style="background-color: #204D74;">1</div>
+				<div class="col-md-1 col-md-offset-8" style="background-color: #66512C;">1</div>
+			</div>
+			
+			
+			
+			<hr >
+			<!-- 列排序 -->
+			<div class="row">
+				<div class="col-md-1" style="background-color: black;">1</div>
+				<div class="col-md-1 col-md-pull-1" style="background-color: lawngreen;">1</div>
+				<div class="col-md-1" style="background-color: lightpink;">1</div>
+				<div class="col-md-1 col-md-push-1" style="background-color: navajowhite;">1</div>
+			</div>
+			
+			
+			
+			
+			<hr >
+			<!-- 列嵌套 -->
+			<div class="row">
+				<div class="col-md-6" style="background-color: green;">
+					<div class="row">
+						<div class="col-md-1" style="background-color: #000000;">1</div>
+						<div class="col-md-9" style="background-color: #1B6D85;">9</div>
+					</div>
+				</div>
+				<div class="col-md-6" style="background-color: black;">6</div>
+			</div>
+			
+			
+			
+			<hr >
+			<div class="row">
+				<div class="col-md-3 col-sm-6" style="background-color: black;">1</div>
+				<div class="col-md-3 col-sm-6" style="background-color: lawngreen;">1</div>
+				<div class="col-md-3 col-sm-6" style="background-color: lightpink;">1</div>
+				<div class="col-md-3 col-sm-6" style="background-color: navajowhite;">1</div>
+			</div>
+			
+			
+			
+		</div>
+	</body>
+</html>
