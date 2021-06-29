@@ -27,6 +27,21 @@
 			5. 单选框
 				垂直显示 .radio
 				水平显示 .radio-inline
+				
+			6. 按钮
+				(1). 使用按钮
+					基础样式: .btn
+					附加样式: btn-primary btn-info btn-success btn-warning
+						btn-danger btn-link btn-default
+				(2). 多标签使用
+					其他标签可以通过添加按钮样式设置成按钮效果(a标签 , span标签等)
+				(3). 按钮大小
+					大按钮 .btn-lg
+					正常按钮 .btn-sm
+					小按钮 .btn-xs
+				(4). 按钮禁用
+					a. 通过disabled属性(真正的禁用元素)
+					b. 通过disabled样式(样式上禁用)
 			
 		 -->
 		 
@@ -41,6 +56,8 @@
 		 <input type="checkbox" name="hobby" /> 跳舞
 		 <input type="radio" name="sex" /> 男
 		 <input type="radio" name="sex" /> 女
+		<button>按钮</button>
+		<input type="button" value="按钮" />
 		 
 		 
 		 <hr ><br />
@@ -133,5 +150,32 @@
 		 </div>
 		
 		
+		<!-- 按钮 -->
+		<button class="btn">按钮</button>
+		<button class="btn btn-danger">按钮</button>
+		<button class="btn btn-success">按钮</button>
+		<button class="btn btn-warning">按钮</button>
+		<button class="btn btn-primary">按钮</button>
+		<button class="btn btn-info">按钮</button>
+		<button class="btn btn-default">按钮</button>
+		<button class="btn btn-link">按钮</button>
+		<br>
+		<!-- 通过按钮样式设置其他元素为按钮效果 -->
+		<a href="#" class="btn btn-success">a标签</a>
+		<span class="btn btn-danger">span标签</span>
+		<div class="btn btn-info">div标签</div>
+		<br>
+		<!-- 设置按钮大小 -->
+		<button class="btn btn-danger">按钮</button>
+		<button class="btn btn-success btn-lg">按钮</button>
+		<button class="btn btn-warning btn-sm">按钮</button>
+		<button class="btn btn-warning btn-xs">按钮</button>
+		<br>
+		<!-- 按钮禁用 -->
+		<!-- 在标签中添加disable属性 -->
+		<button class="btn btn-info" onclick="alert('Hello');" disabled="disabled">按钮</button>
+		<!-- 在元素标签中添加类名disabled -->
+		<button class="btn btn-primary disabled" onclick="alert('Hello');">按钮</button>
+
 	</body>
 </html>
